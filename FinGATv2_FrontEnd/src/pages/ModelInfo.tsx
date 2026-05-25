@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Brain, Activity, RefreshCw, Zap, Cpu, Network, Layers, TrendingUp, Shield, Clock, Database, Code } from 'lucide-react'
+import { Brain, Activity, RefreshCw, Zap, Network } from 'lucide-react'
 import { useTheme } from '@/contexts/ThemeContext'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
