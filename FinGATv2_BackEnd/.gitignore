@@ -1,0 +1,163 @@
+# ============================================
+# SENSITIVE FILES - NEVER COMMIT!
+# ============================================
+.env
+.env.local
+.env.*.local
+.env.production
+.env.development
+*.key
+*.pem
+
+# ============================================
+# PYTHON CACHE & BUILD
+# ============================================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ============================================
+# VIRTUAL ENVIRONMENTS
+# ============================================
+venv/
+env/
+ENV/
+.venv/
+
+# ============================================
+# IDE & EDITORS
+# ============================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+
+# ============================================
+# OPERATING SYSTEM
+# ============================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ============================================
+# TESTING
+# ============================================
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# ============================================
+# LOGS
+# ============================================
+*.log
+logs/
+lightning_logs/
+
+# ============================================
+# LARGE FILES - TOO BIG FOR GITHUB
+# ============================================
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Large model checkpoints (>100MB)
+checkpoints/*.ckpt
+checkpoints/*.pt
+checkpoints/*.pth
+# Keep folder visible
+!checkpoints/.gitkeep
+# Allow production model
+!checkpoints/production_model.ckpt
+
+# ============================================
+# DATA FILES - OPTIONAL
+# ============================================
+data/*.csv
+data/*.parquet
+predictions/*.csv
+predictions/*.json
+indian_data/*.csv
+# Always keep folder structure
+!data/.gitkeep
+!predictions/.gitkeep
+!indian_data/.gitkeep
+
+# ============================================
+# JUPYTER NOTEBOOKS
+# ============================================
+.ipynb_checkpoints/
+*.ipynb
+
+# ============================================
+# DATABASE & MISC
+# ============================================
+*.db
+*.sqlite
+*.sqlite3
+*.bak
+*.tmp
+.cache/
+test_*.py
+
+# ============================================
+# RL MODEL EXPERIMENTS
+# ============================================
+rl_models/hybrid/
+rl_models/feature_selection/
+rl_models/hyperparameter/
+# Keep manifest and selected run folder
+!rl_models/selected_runs/
+!rl_models/selected_runs/.gitkeep
+!rl_models/selected_runs/latest_manifest.json
+# Allow latest RL model run results
+!rl_models/hybrid/2025-11-06_16-49-13/
+!rl_models/hybrid/2025-11-06_16-49-13/*.json
+!rl_models/hybrid/2025-11-06_16-49-13/*.npy
+!rl_models/hybrid/2025-11-06_16-49-13/*.txt
+
+# ============================================
+# NODE/FRONTEND
+# ============================================
+node_modules/
+.npm
+.eslintcache
+*.tsbuildinfo
+
+# ============================================
+# OTHER OUTPUTS
+# ============================================
+.next/
+out/
+results/
+outputs/
+
