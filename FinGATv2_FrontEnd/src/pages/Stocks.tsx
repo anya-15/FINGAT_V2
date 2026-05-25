@@ -189,7 +189,7 @@ export default function Stocks() {
             <div className={`text-center py-16 ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>
               <Database className="h-16 w-16 mx-auto mb-4 opacity-50" />
               <p className="text-lg font-semibold">No stocks loaded from backend</p>
-              <p className="text-sm mt-2">Make sure backend is running at http://localhost:8000</p>
+              <p className="text-sm mt-2">Make sure backend is running at https://fingat-v2-2.onrender.com</p>
               <p className="text-sm mt-1">Check browser console (F12) for errors</p>
             </div>
           ) : filteredStocks.length === 0 ? (
